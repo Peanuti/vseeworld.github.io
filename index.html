@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="SecureHome - Smart Security & Home Automation for a Safer Tomorrow. 24/7 AI Monitoring, Real-Time Alerts, Privacy First." />
-  <title>SecureHome | Smart Security & Home Automation</title>
+  <meta name="description" content="Vseeworld - Smart Security & Home Automation for a Safer Tomorrow. 24/7 AI Monitoring, Real-Time Alerts, Privacy First." />
+  <title>Vseeworld | Smart Security & Home Automation</title>
 
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -44,127 +44,180 @@
     .feature-icon:hover {
       scale: 1.1;
     }
+    .section-padding {
+      padding-top: clamp(4rem, 8vw, 6rem);
+      padding-bottom: clamp(4rem, 8vw, 6rem);
+    }
+    .hero-bg-pattern {
+      background-image: radial-gradient(circle at 10% 20%, rgba(30, 64, 175, 0.05) 0%, transparent 20%),
+                        radial-gradient(circle at 90% 80%, rgba(5, 150, 105, 0.05) 0%, transparent 20%);
+    }
   </style>
 </head>
 <body class="bg-white text-gray-900">
 
   <!-- Header -->
-  <header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="flex items-center space-x-2">
-        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"></path>
-          <circle cx="12" cy="11" r="3"></circle>
-        </svg>
-        <span class="text-xl font-bold">Vseeworld</span>
+  <header class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center shadow-md">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"></path>
+            <circle cx="12" cy="11" r="3"></circle>
+          </svg>
+        </div>
+        <span class="text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Vseeworld</span>
       </div>
-      <nav class="hidden md:flex space-x-8">
-        <a href="#features" class="text-gray-700 hover:text-primary">Features</a>
-        <a href="#how-it-works" class="text-gray-700 hover:text-primary">How It Works</a>
-        <a href="#faq" class="text-gray-700 hover:text-primary">FAQ</a>
+      <nav class="hidden md:flex space-x-10">
+        <a href="#features" class="text-gray-700 hover:text-primary font-medium transition-colors">Features</a>
+        <a href="#how-it-works" class="text-gray-700 hover:text-primary font-medium transition-colors">How It Works</a>
+        <a href="#faq" class="text-gray-700 hover:text-primary font-medium transition-colors">FAQ</a>
       </nav>
+      <button class="md:hidden p-2">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="py-24 px-6 text-center bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden">
-    <div class="absolute inset-0 bg-hero bg-opacity-20"></div>
-    <div class="max-w-4xl mx-auto relative z-10">
-      <h1 class="text-3xl md:text-5xl font-extrabold mb-6 text-dark">
-        Smarter Security for Your <span class="text-primary">Home & Family</span>
-      </h1>
-      <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
-        Protect what matters most with AI-powered surveillance, real-time alerts, and end-to-end encryption. 
-        Always watching. Always secure.
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
+  <section class="section-padding text-center bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-100 hero-bg-pattern relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-green-500/5"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
+      <div class="mb-8">
+        <span class="inline-block px-4 py-2 bg-blue-100 text-primary rounded-full text-sm font-medium mb-6">
+          🛡️ Trusted by 50K+ Homes
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+          Your Intelligent Guardian for
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">Home & Family</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+          Experience next-generation home security with smart AI, crystal-clear video, and unwavering privacy. 
+          Your peace of mind is our mission.
+        </p>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
         <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn bg-primary text-white px-8 py-4 rounded-lg font-semibold transition"
+          href="#"
+          class="btn bg-gradient-to-r from-primary to-blue-600 text-white px-8 py-4 rounded-xl font-semibold transition-all text-lg shadow-lg hover:shadow-xl"
         >
-          Download App (iOS)
+          🚀 Start Free Trial
         </a>
         <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition"
+          href="#"
+          class="btn bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-all text-lg shadow-lg hover:shadow-xl border border-gray-200"
         >
-          Get it on Android
+          📋 View Pricing
         </a>
       </div>
     </div>
   </section>
 
   <!-- Features -->
-  <section id="features" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-16 text-dark">Advanced Security Features</h2>
-      <div class="grid md:grid-cols-3 gap-10">
-        <div class="text-center p-8">
-          <div class="w-16 h-16 mx-auto mb-6 bg-primary bg-opacity-10 rounded-full flex items-center justify-center feature-icon">
-            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <section id="features" class="section-padding bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-dark">Advanced Security Features</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Cutting-edge technology designed to keep your home safe and secure
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div class="text-center p-8 rounded-2xl hover:shadow-lg transition-shadow bg-gradient-to-b from-white to-gray-50 border border-gray-100">
+          <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary to-blue-500 bg-opacity-10 rounded-2xl flex items-center justify-center feature-icon mx-auto">
+            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
             </svg>
           </div>
           <h3 class="text-xl font-semibold mb-3">24/7 AI Surveillance</h3>
-          <p class="text-gray-600">Smart motion detection with AI recognition. Distinguish people, pets, and vehicles.</p>
+          <p class="text-gray-600 leading-relaxed">Smart motion detection with AI recognition. Distinguish people, pets, and vehicles with precision.</p>
         </div>
-        <div class="text-center p-8">
-          <div class="w-16 h-16 mx-auto mb-6 bg-accent bg-opacity-10 rounded-full flex items-center justify-center feature-icon">
-            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="text-center p-8 rounded-2xl hover:shadow-lg transition-shadow bg-gradient-to-b from-white to-gray-50 border border-gray-100">
+          <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent to-emerald-500 bg-opacity-10 rounded-2xl flex items-center justify-center feature-icon mx-auto">
+            <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.165-2.052-.48-3.016z"></path>
             </svg>
           </div>
           <h3 class="text-xl font-semibold mb-3">End-to-End Encryption</h3>
-          <p class="text-gray-600">Your data is encrypted in transit and at rest. Never stored on third-party servers.</p>
+          <p class="text-gray-600 leading-relaxed">Your data is encrypted in transit and at rest. Never stored on third-party servers. Your privacy is our priority.</p>
         </div>
-        <div class="text-center p-8">
-          <div class="w-16 h-16 mx-auto mb-6 bg-purple-100 rounded-full flex items-center justify-center feature-icon">
-            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="text-center p-8 rounded-2xl hover:shadow-lg transition-shadow bg-gradient-to-b from-white to-gray-50 border border-gray-100">
+          <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-pink-500 bg-opacity-10 rounded-2xl flex items-center justify-center feature-icon mx-auto">
+            <svg class="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
             </svg>
           </div>
           <h3 class="text-xl font-semibold mb-3">Instant Mobile Alerts</h3>
-          <p class="text-gray-600">Get real-time push notifications when activity is detected. View live feed instantly.</p>
+          <p class="text-gray-600 leading-relaxed">Get real-time push notifications when activity is detected. View live feed instantly from anywhere.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- How It Works -->
-  <section id="how-it-works" class="py-20 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-16 text-dark">How SecureHome Works</h2>
-      <div class="space-y-12">
-        <div class="flex flex-col md:flex-row items-center gap-8">
-          <div class="md:w-1/2">
-            <img src="https://via.placeholder.com/400x250?text=Install+Camera" alt="Install Camera" class="rounded-lg shadow-md w-full">
+  <section id="how-it-works" class="section-padding bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-dark">How Vseeworld Works</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Simple setup, powerful protection - in just 3 easy steps
+        </p>
+      </div>
+      <div class="space-y-16">
+        <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
+          <div class="lg:w-1/2 order-2 lg:order-1">
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <h3 class="text-2xl font-semibold mb-4 text-gray-800">1. Install & Connect</h3>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                Place your Vseeworld camera indoors or outdoors. Connect to Wi-Fi via the intuitive mobile app.
+              </p>
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                Quick 5-minute setup
+              </div>
+            </div>
           </div>
-          <div class="md:w-1/2">
-            <h3 class="text-2xl font-semibold mb-3">1. Install & Connect</h3>
-            <p class="text-gray-600">Place your SecureHome camera indoors or outdoors. Connect to Wi-Fi via the app.</p>
+          <div class="lg:w-1/2 order-1 lg:order-2">
+            <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Install Camera" class="rounded-2xl shadow-lg w-full h-64 object-cover">
           </div>
         </div>
-        <div class="flex flex-col md:flex-row-reverse items-center gap-8">
-          <div class="md:w-1/2">
-            <img src="https://via.placeholder.com/400x250?text=AI+Detection" alt="AI Detection" class="rounded-lg shadow-md w-full">
+        
+        <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
+          <div class="lg:w-1/2">
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="AI Detection" class="rounded-2xl shadow-lg w-full h-64 object-cover">
           </div>
-          <div class="md:w-1/2">
-            <h3 class="text-2xl font-semibold mb-3">2. AI-Powered Detection</h3>
-            <p class="text-gray-600">Our AI learns your environment and alerts you only to important events.</p>
+          <div class="lg:w-1/2">
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <h3 class="text-2xl font-semibold mb-4 text-gray-800">2. AI-Powered Detection</h3>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                Our advanced AI learns your environment and alerts you only to important events, reducing false alarms.
+              </p>
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                Smart recognition technology
+              </div>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col md:flex-row items-center gap-8">
-          <div class="md:w-1/2">
-            <img src="https://via.placeholder.com/400x250?text=Live+View" alt="Live View" class="rounded-lg shadow-md w-full">
+        
+        <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
+          <div class="lg:w-1/2 order-2 lg:order-1">
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <h3 class="text-2xl font-semibold mb-4 text-gray-800">3. Monitor Anywhere</h3>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                Access live HD video from your phone, tablet, or computer — anytime, anywhere with our mobile app.
+              </p>
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                24/7 remote access
+              </div>
+            </div>
           </div>
-          <div class="md:w-1/2">
-            <h3 class="text-2xl font-semibold mb-3">3. Monitor Anywhere</h3>
-            <p class="text-gray-600">Access live HD video from your phone, tablet, or computer — anytime, anywhere.</p>
+          <div class="lg:w-1/2 order-1 lg:order-2">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Live View" class="rounded-2xl shadow-lg w-full h-64 object-cover">
           </div>
         </div>
       </div>
@@ -172,41 +225,86 @@
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12 text-dark">Frequently Asked Questions</h2>
-      <div class="space-y-6">
-        <div>
-          <h3 class="text-xl font-semibold">Is my video footage stored securely?</h3>
-          <p class="text-gray-600 mt-2">Yes. All video is encrypted and stored locally on your device or private cloud. We never access your data.</p>
+  <section id="faq" class="section-padding bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-dark">Frequently Asked Questions</h2>
+        <p class="text-lg text-gray-600">
+          Everything you need to know about Vseeworld
+        </p>
+      </div>
+      <div class="space-y-8">
+        <div class="bg-gray-50 rounded-2xl p-6 hover:shadow-md transition-shadow">
+          <h3 class="text-xl font-semibold mb-3 text-gray-800">Is my video footage stored securely?</h3>
+          <p class="text-gray-600 leading-relaxed">Yes. All video is encrypted and stored locally on your device or private cloud. We never access your data. Your privacy is our top priority and we comply with GDPR regulations.</p>
         </div>
-        <div>
-          <h3 class="text-xl font-semibold">Do I need a subscription?</h3>
-          <p class="text-gray-600 mt-2">Basic features are free. Cloud recording and advanced AI require a low-cost plan starting at $4.99/month.</p>
+        <div class="bg-gray-50 rounded-2xl p-6 hover:shadow-md transition-shadow">
+          <h3 class="text-xl font-semibold mb-3 text-gray-800">Do I need a subscription?</h3>
+          <p class="text-gray-600 leading-relaxed">Basic features are free. Cloud recording and advanced AI features require a low-cost plan starting at $4.99/month. We offer a 30-day free trial for premium features.</p>
         </div>
-        <div>
-          <h3 class="text-xl font-semibold">Can I use it without internet?</h3>
-          <p class="text-gray-600 mt-2">The camera works offline for local recording, but remote viewing and alerts require internet.</p>
+        <div class="bg-gray-50 rounded-2xl p-6 hover:shadow-md transition-shadow">
+          <h3 class="text-xl font-semibold mb-3 text-gray-800">Can I use it without internet?</h3>
+          <p class="text-gray-600 leading-relaxed">The camera works offline for local recording, but remote viewing and real-time alerts require internet connectivity. Local storage is available for offline use.</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6 hover:shadow-md transition-shadow">
+          <h3 class="text-xl font-semibold mb-3 text-gray-800">What devices are supported?</h3>
+          <p class="text-gray-600 leading-relaxed">We support iOS 12+ and Android 8+.0+ devices. Our web dashboard is accessible from any modern browser. Compatible with most smart home systems.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-10 bg-dark text-white">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <div class="flex justify-center space-x-2 text-sm opacity-80 mb-4">
-        <span>✅ GDPR Compliant</span>
-        <span>•</span>
-        <span>✅ End-to-End Encrypted</span>
-        <span>•</span>
-        <span>✅ No Third-Party Ads</span>
+  <footer class="py-12 bg-gradient-to-br from-dark to-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"></path>
+                <circle cx="12" cy="11" r="3"></circle>
+              </svg>
+            </div>
+            <span class="text-lg font-bold">Vseeworld</span>
+          </div>
+          <p class="text-gray-300 leading-relaxed">
+            Advanced security solutions for your home and family. Always watching, always secure.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+            <li><a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Support</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+            <li><a href="mailto:support@vseeworld.com" class="hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
       </div>
-      <p>&copy; 2025 Vseeworld. All rights reserved.</p>
-      <div class="mt-4 space-x-6">
-        <a href="#" class="hover:text-blue-400">Privacy Policy</a>
-        <a href="#" class="hover:text-blue-400">Terms of Service</a>
-        <a href="mailto:support@jsoftware.dev" class="hover:text-blue-400">Contact Us</a>
+      
+      <div class="border-t border-gray-700 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-400 mb-4 md:mb-0">
+            <span class="flex items-center">
+              <span class="text-green-400 mr-1">✓</span> GDPR Compliant
+            </span>
+            <span class="flex items-center">
+              <span class="text-green-400 mr-1">✓</span> End-to-End Encrypted
+            </span>
+            <span class="flex items-center">
+              <span class="text-green-400 mr-1">✓</span> No Third-Party Ads
+            </span>
+          </div>
+          <p class="text-gray-400 text-sm">&copy; 2025 Vseeworld. All rights reserved.</p>
+        </div>
       </div>
     </div>
   </footer>
